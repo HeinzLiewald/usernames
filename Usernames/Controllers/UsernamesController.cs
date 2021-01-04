@@ -47,7 +47,7 @@ namespace UserNames.Controllers {
             return Enumerable.Range(1, ELEMENTS)
                         .Select(index => new Username {
                             Date = DateTime.Now.AddDays(index),
-                            Value = Adjective[rng.Next(Adjective.Length)] + Name[rng.Next(Name.Length)] + rng.Next(ELEMENTS)
+                            Value = Adjective[rng.Next(Adjective.Length)] + Name[rng.Next(Name.Length)]
                         }).ToArray();
         }
     }
